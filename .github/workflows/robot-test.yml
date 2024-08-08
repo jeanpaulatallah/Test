@@ -33,6 +33,7 @@ jobs:
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo apt-get update
         sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
+        sudo apt-get install -y libnss3
 
 
     - name: Download and set up ChromeDriver
@@ -41,6 +42,12 @@ jobs:
         unzip chromedriver-linux64.zip
         sudo chmod +x chromedriver-linux64/chromedriver
         sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
+
+    - name: Verify Chrome and ChromeDriver
+      run: |
+        google-chrome --version
+        chromedriver --version
+
 
     - name: Run Robot Framework tests
       run: |
