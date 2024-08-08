@@ -37,7 +37,7 @@ jobs:
 
     - name: Download and set up ChromeDriver
       run: |
-        curl -LO https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac64/chromedriver_mac64.zip
+        curl  https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac64/chromedriver_mac64.zip
         unzip chromedriver_mac64.zip
         chmod +x chromedriver_mac64/chromedriver
         sudo mv chromedriver_mac64/chromedriver /usr/local/bin/chromedriver
