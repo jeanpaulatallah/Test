@@ -30,17 +30,17 @@ jobs:
 
     - name: Install Google Chrome
       run: |
-        curl -LO https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac-arm64/chromedriver-mac-arm64.zip
+        curl -LO https://dl.google.com/chrome/mac/universal/chrome-mac-universal.dmg
         brew install --cask google-chrome
         brew install nss
 
 
     - name: Download and set up ChromeDriver
       run: |
-        curl  https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac64/chromedriver_mac64.zip
-        unzip chromedriver_mac64.zip
-        chmod +x chromedriver_mac64/chromedriver
-        sudo mv chromedriver_mac64/chromedriver /usr/local/bin/chromedriver
+        curl -LO https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac-arm64/chromedriver-mac-arm64.zip
+        unzip chromedriver-mac-arm64.zip
+        chmod +x chromedriver-mac-arm64/chromedriver
+        sudo mv chromedriver-mac-arm64/chromedriver /usr/local/bin/chromedriver
 
 
     - name: Verify Chrome and ChromeDriver
