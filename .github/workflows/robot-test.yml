@@ -28,4 +28,4 @@ jobs:
 
     - name: Run Robot Framework tests
       run: |
-        robot test.robot  # Adjust the command if your test file or command differs
+        robot Test.robot
