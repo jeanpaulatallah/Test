@@ -33,7 +33,7 @@ jobs:
         wget https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/linux64/chromedriver-linux64.zip
         unzip chromedriver-linux64.zip
         sudo chmod +x chromedriver-linux64/chromedriver
-        sudo mv chromedriver /usr/local/bin/chromedriver
+        sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
 
     - name: Run Robot Framework tests
       run: |
