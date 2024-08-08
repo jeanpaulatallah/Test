@@ -16,12 +16,16 @@ ${PASSWORD FIELD}   //*[@id="loginForm"]/div/div[2]/div/label/input
 *** Test Cases ***
 InstaLoginWrong
     Open Browser                    ${URL}  chrome    chrome_options=${CHROME_OPTIONS}
+    Log To Console                  Browser opened
     Maximize Browser Window
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
+    Log To Console                  Username Added
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
+    Log To Console                  Password added
     Sleep    5
 
     Click Button                    //*[@id="loginForm"]/div/div[3]/button
+    Log To Console                  Login Button Clicked
     Wait Until Element Is Visible   //*[@id="loginForm"]/span/div    timeout=30s
     Element Should Contain          //*[@id="loginForm"]/span/div    Sorry, your password was incorrect. Please double-check your password.
     Sleep                           5
