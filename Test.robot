@@ -11,7 +11,7 @@ ${PASSWORD FIELD}   //*[@id="loginForm"]/div/div[2]/div/label/input
 
 *** Test Cases ***
 InstaLoginWrong
-    Open Browser                    ${URL}  /usr/local/bin/chromedriver
+    Open Browser                    ${URL}  chrome
     Maximize Browser Window
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
