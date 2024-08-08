@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - name: Checkout code
@@ -23,10 +23,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install selenium
-        pip install robotframework
-        pip install robotframework-seleniumlibrary
+        python3 -m pip3 install --upgrade pip
+        pip3 install selenium
+        pip3 install robotframework
+        pip3 install robotframework-seleniumlibrary
 
     - name: Install Google Chrome
       run: |
