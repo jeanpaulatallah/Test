@@ -30,18 +30,18 @@ jobs:
 
     - name: Install Google Chrome
       run: |
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo apt-get update
-        sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
-        sudo apt-get install -y libnss3
+        curl -LO https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac-arm64/chromedriver-mac-arm64.zip
+        brew install --cask google-chrome
+        brew install nss
 
 
     - name: Download and set up ChromeDriver
       run: |
-        wget https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/linux64/chromedriver-linux64.zip
-        unzip chromedriver-linux64.zip
-        sudo chmod +x chromedriver-linux64/chromedriver
-        sudo mv chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
+        curl -LO https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/mac64/chromedriver_mac64.zip
+        unzip chromedriver_mac64.zip
+        chmod +x chromedriver
+        sudo mv chromedriver /usr/local/bin/chromedriver
+
 
     - name: Verify Chrome and ChromeDriver
       run: |
