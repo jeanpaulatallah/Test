@@ -22,7 +22,7 @@ InstaLoginWrong
     Sleep    5
 
     Click Button                    //*[@id="loginForm"]/div/div[3]/button
-    Wait Until Element Is Visible   //*[@id="loginForm"]/span/div
+    Wait Until Element Is Visible   //*[@id="loginForm"]/span/div    timeout=30s
     Element Should Contain          //*[@id="loginForm"]/span/div    Sorry, your password was incorrect. Please double-check your password.
     Sleep                           5
     Close Browser
