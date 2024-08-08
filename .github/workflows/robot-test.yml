@@ -43,10 +43,6 @@ jobs:
         sudo mv chromedriver-mac-arm64/chromedriver /usr/local/bin/chromedriver
 
 
-    - name: Verify Chrome and ChromeDriver
-      run: |
-        google-chrome --version
-        chromedriver --version
 
 
     - name: Run Robot Framework tests
