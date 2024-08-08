@@ -3,6 +3,9 @@ Library     SeleniumLibrary
 Library     XML
 
 *** Variables ***
+${CHROME_OPTIONS}    headless
+${CHROME_OPTIONS}    no-sandbox
+${CHROME_OPTIONS}    disable-dev-shm-usage
 ${URL}          https://www.instagram.com/
 ${USERNAME}     jeanpaula
 ${PASSWORD}     test121212
@@ -11,7 +14,7 @@ ${PASSWORD FIELD}   //*[@id="loginForm"]/div/div[2]/div/label/input
 
 *** Test Cases ***
 InstaLoginWrong
-    Open Browser                    ${URL}  chrome
+    Open Browser                    ${URL}  chrome    chrome_options=${CHROME_OPTIONS}
     Maximize Browser Window
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
