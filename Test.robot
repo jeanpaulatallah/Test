@@ -6,6 +6,7 @@ Library     XML
 ${CHROME_OPTIONS}    headless
 ${CHROME_OPTIONS}    no-sandbox
 ${CHROME_OPTIONS}    disable-dev-shm-usage
+${CHROME_OPTIONS}    remote-debugging-pipe
 ${URL}          https://www.instagram.com/
 ${USERNAME}     jeanpaula
 ${PASSWORD}     test121212
