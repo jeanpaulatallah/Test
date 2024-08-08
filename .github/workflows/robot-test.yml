@@ -28,6 +28,13 @@ jobs:
         pip install robotframework
         pip install robotframework-seleniumlibrary
 
+    - name: Install Google Chrome
+      run: |
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo apt-get update
+        sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
+
+
     - name: Download and set up ChromeDriver
       run: |
         wget https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.99/linux64/chromedriver-linux64.zip
