@@ -62,7 +62,7 @@ jobs:
 
     - name: Copy screenshots to repo
       run: |
-        cp -r screenshots/ Test/screenshots/
+        cp -r screenshots/ screenshots/
       working-directory: Test
 
 
