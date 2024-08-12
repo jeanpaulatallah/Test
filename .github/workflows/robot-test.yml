@@ -43,8 +43,12 @@ jobs:
         sudo mv chromedriver-mac-arm64/chromedriver /usr/local/bin/chromedriver
 
 
-
-
     - name: Run Robot Framework tests
       run: |
         robot Test.robot
+
+    - name: Upload screenshots
+      uses: actions/upload-artifact@latest
+      with:
+          name: test-snapshots
+          path: Test/snapshots
