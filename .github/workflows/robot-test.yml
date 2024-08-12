@@ -48,7 +48,7 @@ jobs:
         robot Test.robot
 
     - name: Upload screenshots
-      uses: actions/upload-artifact@latest
+      uses: actions/upload-artifact@v3
       with:
           name: test-snapshots
           path: Test/snapshots
