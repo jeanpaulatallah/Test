@@ -52,4 +52,4 @@ jobs:
       if: failure()
       with:
           name: test-snapshots
-          path: Test/screenshots
+          path: Test/screenshots.png
