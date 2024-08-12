@@ -52,7 +52,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
           name: screenshots
-          path: screenshots
+          path: screenshots/
 
     - name: Check out repo again for pushing
       uses: actions/checkout@v3
@@ -62,8 +62,7 @@ jobs:
 
     - name: Copy screenshots to repo
       run: |
-        mkdir -p screenshots1
-        cp -r screenshots.zip screenshots1/
+        cp -r screenshots/ Test/screenshots/
       working-directory: Test
 
 
@@ -72,7 +71,7 @@ jobs:
         cd repo
         git config user.name "jeanpaulatallah"
         git config user.email "jeanpaulatallah@github.com"
-        git add screenshots1/
+        git add screenshots/
         git commit -m "Add screenshots from workflow"
         git push origin main
       env:
