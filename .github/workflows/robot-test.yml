@@ -62,7 +62,8 @@ jobs:
 
     - name: Copy screenshots to repo
       run: |
-        cp -r screenshots/ screenshots/
+        mkdir -p screenshots1
+        cp -r screenshots/ screenshots1/
       working-directory: Test
 
 
@@ -71,7 +72,7 @@ jobs:
         cd repo
         git config user.name "jeanpaulatallah"
         git config user.email "jeanpaulatallah@github.com"
-        git add screenshots/
+        git add screenshots1/
         git commit -m "Add screenshots from workflow"
         git push origin main
       env:
