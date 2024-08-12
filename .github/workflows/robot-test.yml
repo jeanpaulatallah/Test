@@ -46,7 +46,7 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         mkdir -p screenshots
-        robot --outputdir results --log None --report None --xunit None Test.robot
+        robot --log None --report None --xunit None Test.robot
 
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
