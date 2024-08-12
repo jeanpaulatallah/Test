@@ -19,6 +19,7 @@ InstaLoginWrong
     Open Browser                    ${URL}  chrome    chrome_options=${CHROME_OPTIONS}
     Log To Console                  Browser opened
     Maximize Browser Window
+    Sleep                           3
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Log To Console                  Username Added
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
