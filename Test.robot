@@ -20,7 +20,7 @@ InstaLoginWrong
     Maximize Browser Window
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Log To Console                  Username Added
-    Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
+    Input Text                      ${PASSWORD FIELDD}   ${PASSWORD}
     Log To Console                  Password added
     Sleep                           3
     Close Browser
