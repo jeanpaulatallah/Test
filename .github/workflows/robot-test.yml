@@ -63,7 +63,7 @@ jobs:
     - name: Copy screenshots to repo
       run: |
         mkdir -p screenshots1
-        cp -r screenshots/ screenshots1/
+        cp -r screenshots.zip screenshots1/
       working-directory: Test
 
 
