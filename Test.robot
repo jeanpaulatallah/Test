@@ -1,6 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     XML
+Library    Screenshot
 
 *** Variables ***
 ${CHROME_OPTIONS}    headless
@@ -20,8 +21,9 @@ InstaLoginWrong
     Maximize Browser Window
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Log To Console                  Username Added
-    Input Text                      ${PASSWORD FIELDD}   ${PASSWORD}
+    Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
     Log To Console                  Password added
+    Take Screenshot                 screenshots/test.png
     Sleep                           3
     Close Browser
 
