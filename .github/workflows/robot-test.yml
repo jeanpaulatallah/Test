@@ -53,3 +53,26 @@ jobs:
       with:
           name: screenshots
           path: screenshots
+
+    - name: Check out repo again for pushing
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: Test
+
+    - name: Copy screenshots to repo
+      run: |
+        cp -r screenshots/ Test/screenshots/
+        working-directory: Test
+
+    - name: Commit and push screenshots to repo
+      run: |
+          cd repo
+          git config user.name "jeanpaulatallah"
+          git config user.email "jeanpaulatallah@github.com"
+          git add screenshots/
+          git commit -m "Add screenshots from workflow"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
