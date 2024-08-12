@@ -68,12 +68,12 @@ jobs:
 
     - name: Commit and push screenshots to repo
       run: |
-          cd repo
-          git config user.name "jeanpaulatallah"
-          git config user.email "jeanpaulatallah@github.com"
-          git add screenshots/
-          git commit -m "Add screenshots from workflow"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        cd repo
+        git config user.name "jeanpaulatallah"
+        git config user.email "jeanpaulatallah@github.com"
+        git add screenshots/
+        git commit -m "Add screenshots from workflow"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
