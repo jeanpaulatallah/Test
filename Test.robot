@@ -23,7 +23,7 @@ InstaLoginWrong
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Log To Console                  Username Added
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
-    Log To Console                  Password added
+    Log To Console                  Password addedd
     Take Screenshot                 screenshots/test.png
     Sleep                           3
     Close Browser
