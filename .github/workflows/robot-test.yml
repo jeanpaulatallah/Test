@@ -73,7 +73,7 @@ jobs:
         cd Test
         git config user.name "jeanpaulatallah"
         git config user.email "jeanpaulatallah@github.com"
-        git add screenshots/
+        git add screenshots_new/
         git commit -m "Add screenshots from workflow"
         git push origin main
       env:
