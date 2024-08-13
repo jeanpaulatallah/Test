@@ -70,7 +70,7 @@ jobs:
       working-directory: Test
 
 
-    - name: Commit and push screenshots to repo
+    - name: Commit and push screenshots to repoo
       run: |
         cd Test
         git config user.name "jeanpaulatallah"
