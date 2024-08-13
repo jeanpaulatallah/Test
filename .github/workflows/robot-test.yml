@@ -46,8 +46,8 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         mkdir -p screenshots_new
-        touch screenshots_new/text.txt
-        robot --outputdir screenshots_new Test.robot
+        echo > screenshots_new/text.txt
+        robot --outputdir screenshots_new/ Test.robot
 
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
