@@ -19,15 +19,15 @@ InstaLoginWrong
     Open Browser                    ${URL}  chrome    chrome_options=${CHROME_OPTIONS}
     Log To Console                  Browser opened
     Maximize Browser Window
-    Take Screenshot                 screenshots/browser_opened
+    Take Screenshot                 screenshots_new/browser_opened
     Sleep                           3
     Input Text                      ${USERNAME FIELD}   ${USERNAME}
     Log To Console                  Username Added
-    Take Screenshot                 screenshots/username.png
+    Take Screenshot                 screenshots_new/username.png
     Input Text                      ${PASSWORD FIELD}   ${PASSWORD}
-    Take Screenshot                 screenshots/password.png
+    Take Screenshot                 screenshots_new/password.png
     Log To Console                  Password addedd
-    Take Screenshot                 screenshots/final
+    Take Screenshot                 screenshots_new/final
     Sleep                           3
     Close Browser
 
