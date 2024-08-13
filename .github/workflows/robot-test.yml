@@ -63,21 +63,23 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         path: Test
 
-    - name: Copy screenshots to repo
+    - name: Copy files to repo
       run: |
-        cp -r /Users/runner/work/Test/Test/screenshots/ Results/screenshots_new/
-        cp -r /Users/runner/work/Test/Test/* Results/
+        cp -r /Users/runner/work/Test/Test/screenshots/* Results/screenshots_new/
+        cp -r /Users/runner/work/Test/Test/output.xml Results/
+        cp -r /Users/runner/work/Test/Test/log.html Results/
+        cp -r /Users/runner/work/Test/Test/report.html Results/
       working-directory: Test
 
 
-    - name: Commit and push screenshots to repoo
+    - name: Commit and push files to repo
       run: |
         cd Test
         git config user.name "jeanpaulatallah"
         git config user.email "jeanpaulatallah@github.com"
         git add Results/screenshots_new/
         git add Results/
-        git commit -m "Add screenshots from workflow"
+        git commit -m "Add results"
         git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
