@@ -70,7 +70,7 @@ jobs:
 
     - name: Commit and push screenshots to repo
       run: |
-        cd repo
+        cd Test
         git config user.name "jeanpaulatallah"
         git config user.email "jeanpaulatallah@github.com"
         git add screenshots/
