@@ -53,8 +53,8 @@ jobs:
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
       with:
-          name: screenshots_test
-          path: screenshots_test/
+          name: screenshots
+          path: screenshots/
 
     - name: Check out repo again for pushing
       uses: actions/checkout@v3
@@ -64,7 +64,7 @@ jobs:
 
     - name: Copy screenshots to repo
       run: |
-        cp -r screenshots_test/* screenshots_new/
+        cp -r screenshots/ screenshots_new/
       working-directory: Test
 
 
