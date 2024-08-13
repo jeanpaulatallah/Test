@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.9.13 on darwin)" generated="2024-08-13T13:31:22.389327" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.9.13 on darwin)" generated="2024-08-13T13:33:44.869965" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="/Users/runner/work/Test/Test/Test.robot">
 <test id="s1-t1" name="InstaLoginWrong" line="18">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-13T13:31:22.500074" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
+<msg time="2024-08-13T13:33:44.958205" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <arg>chrome_options=${CHROME_OPTIONS}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-13T13:31:22.499868" elapsed="5.071063"/>
+<status status="PASS" start="2024-08-13T13:33:44.958039" elapsed="4.041321"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Browser opened</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-08-13T13:31:27.572520" elapsed="0.000501"/>
+<status status="PASS" start="2024-08-13T13:33:48.999829" elapsed="0.000243"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-13T13:31:27.573153" elapsed="0.790340"/>
+<status status="PASS" start="2024-08-13T13:33:49.000188" elapsed="0.638313"/>
 </kw>
 <kw name="Take Screenshot" owner="Screenshot">
-<msg time="2024-08-13T13:31:28.644310" level="INFO" html="true">&lt;a href="screenshots/browser_opened_1.jpg"&gt;&lt;img src="screenshots/browser_opened_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-13T13:33:49.917886" level="INFO" html="true">&lt;a href="screenshots/browser_opened_1.jpg"&gt;&lt;img src="screenshots/browser_opened_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/browser_opened</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<status status="PASS" start="2024-08-13T13:31:28.363782" elapsed="0.280918"/>
+<status status="PASS" start="2024-08-13T13:33:49.638648" elapsed="0.280041"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T13:31:31.657124" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-08-13T13:33:52.942428" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T13:31:28.645124" elapsed="3.012295"/>
+<status status="PASS" start="2024-08-13T13:33:49.919508" elapsed="3.023124"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T13:31:31.658591" level="INFO">Typing text 'jeanpaula' into text field '//*[@id="loginForm"]/div/div[1]/div/label/input'.</msg>
+<msg time="2024-08-13T13:33:52.943822" level="INFO">Typing text 'jeanpaula' into text field '//*[@id="loginForm"]/div/div[1]/div/label/input'.</msg>
 <arg>${USERNAME FIELD}</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T13:31:31.657774" elapsed="0.155569"/>
+<status status="PASS" start="2024-08-13T13:33:52.942983" elapsed="0.110872"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Username Added</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-08-13T13:31:31.813533" elapsed="0.000163"/>
+<status status="PASS" start="2024-08-13T13:33:53.054006" elapsed="0.000143"/>
 </kw>
 <kw name="Take Screenshot" owner="Screenshot">
-<msg time="2024-08-13T13:31:31.946557" level="INFO" html="true">&lt;a href="screenshots/username.png_1.jpg"&gt;&lt;img src="screenshots/username.png_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-13T13:33:53.128121" level="INFO" html="true">&lt;a href="screenshots/username.png_1.jpg"&gt;&lt;img src="screenshots/username.png_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/username.png</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<status status="PASS" start="2024-08-13T13:31:31.813778" elapsed="0.133156"/>
+<status status="PASS" start="2024-08-13T13:33:53.054225" elapsed="0.074149"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-13T13:31:31.947644" level="INFO">Typing text 'test121212' into text field '//*[@id="loginForm"]/div/div[2]/div/label/input'.</msg>
+<msg time="2024-08-13T13:33:53.129047" level="INFO">Typing text 'test121212' into text field '//*[@id="loginForm"]/div/div[2]/div/label/input'.</msg>
 <arg>${PASSWORD FIELD}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-13T13:31:31.947273" elapsed="0.129327"/>
+<status status="PASS" start="2024-08-13T13:33:53.128728" elapsed="0.054321"/>
 </kw>
 <kw name="Take Screenshot" owner="Screenshot">
-<msg time="2024-08-13T13:31:32.163785" level="INFO" html="true">&lt;a href="screenshots/password.png_1.jpg"&gt;&lt;img src="screenshots/password.png_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-13T13:33:53.247881" level="INFO" html="true">&lt;a href="screenshots/password.png_1.jpg"&gt;&lt;img src="screenshots/password.png_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/password.png</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<status status="PASS" start="2024-08-13T13:31:32.077150" elapsed="0.087167"/>
+<status status="PASS" start="2024-08-13T13:33:53.183240" elapsed="0.064968"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Password addedd</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-08-13T13:31:32.164930" elapsed="0.000449"/>
+<status status="PASS" start="2024-08-13T13:33:53.248548" elapsed="0.000203"/>
 </kw>
 <kw name="Take Screenshot" owner="Screenshot">
-<msg time="2024-08-13T13:31:32.234910" level="INFO" html="true">&lt;a href="screenshots/final_1.jpg"&gt;&lt;img src="screenshots/final_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-13T13:33:53.320625" level="INFO" html="true">&lt;a href="screenshots/final_1.jpg"&gt;&lt;img src="screenshots/final_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>screenshots/final</arg>
 <doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
-<status status="PASS" start="2024-08-13T13:31:32.165576" elapsed="0.069592"/>
+<status status="PASS" start="2024-08-13T13:33:53.248838" elapsed="0.072113"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-08-13T13:31:35.312546" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-08-13T13:33:56.357211" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-08-13T13:31:32.235461" elapsed="3.077524"/>
+<status status="PASS" start="2024-08-13T13:33:53.321327" elapsed="3.035999"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-13T13:31:35.313453" elapsed="0.247727"/>
+<status status="PASS" start="2024-08-13T13:33:56.357515" elapsed="0.229427"/>
 </kw>
-<status status="PASS" start="2024-08-13T13:31:22.499250" elapsed="13.062145"/>
+<status status="PASS" start="2024-08-13T13:33:44.957490" elapsed="11.629669"/>
 </test>
-<status status="PASS" start="2024-08-13T13:31:22.390112" elapsed="13.171883"/>
+<status status="PASS" start="2024-08-13T13:33:44.870601" elapsed="11.716951"/>
 </suite>
 <statistics>
 <total>
