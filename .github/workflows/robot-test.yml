@@ -46,13 +46,13 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         mkdir -p screenshots
-        robot --log None --report None --xunit None Test.robot
+        robot Test.robot
 
     - name: Upload screenshots
       uses: actions/upload-artifact@v3
       with:
-          name: screenshots
-          path: screenshots/
+          name: screenshots_test
+          path: screenshots_test/
 
     - name: Check out repo again for pushing
       uses: actions/checkout@v3
@@ -62,7 +62,7 @@ jobs:
 
     - name: Copy screenshots to repo
       run: |
-        cp -r screenshots_new/* Test/screenshots/
+        cp -r screenshots_test/* Test/screenshots_new/
       working-directory: Test
 
 
