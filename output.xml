@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-29T13:00:30.081811" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/macbookpro/Documents/GitHub/Test/Test.robot">
+<test id="s1-t1" name="InstaLoginWrong" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-08-29T13:00:30.197931" level="INFO">Opening browser 'chrome' to base url 'https://www.instagram.com/'.</msg>
+<msg time="2024-08-29T13:00:33.664393" level="WARN">The chromedriver version (127.0.6533.72) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (128.0.6613.85); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<arg>chrome_options=${CHROME_OPTIONS}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-08-29T13:00:30.197772" elapsed="11.613226"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Browser opened</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-08-29T13:00:41.811332" elapsed="0.000149"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-08-29T13:00:41.811566" elapsed="0.367442"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<msg time="2024-08-29T13:00:42.179791" level="FAIL">Directory '/Users/macbookpro/Documents/GitHub/Test/screenshots' where to save the screenshot does not exist</msg>
+<arg>screenshots/browser_opened</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="FAIL" start="2024-08-29T13:00:42.179172" elapsed="0.000680">Directory '/Users/macbookpro/Documents/GitHub/Test/screenshots' where to save the screenshot does not exist</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.179949" elapsed="0.000015"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${USERNAME FIELD}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180026" elapsed="0.000014"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Username Added</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180089" elapsed="0.000009"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<arg>screenshots/username.png</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180142" elapsed="0.000009"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${PASSWORD FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180190" elapsed="0.000008"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<arg>screenshots/password.png</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180246" elapsed="0.000007"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Password addedd</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180287" elapsed="0.000007"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<arg>screenshots/final</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180329" elapsed="0.000008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180369" elapsed="0.000007"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-08-29T13:00:42.180419" elapsed="0.000008"/>
+</kw>
+<status status="FAIL" start="2024-08-29T13:00:30.197341" elapsed="11.983182">Directory '/Users/macbookpro/Documents/GitHub/Test/screenshots' where to save the screenshot does not exist</status>
+</test>
+<status status="FAIL" start="2024-08-29T13:00:30.082444" elapsed="12.098320"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-08-29T13:00:33.664393" level="WARN">The chromedriver version (127.0.6533.72) detected in PATH at /usr/local/bin/chromedriver might not be compatible with the detected chrome version (128.0.6613.85); currently, chromedriver 128.0.6613.86 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
